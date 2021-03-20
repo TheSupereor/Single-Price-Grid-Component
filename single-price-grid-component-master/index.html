@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      height: 600px;
+      width: 800px;
+      background-color: hsl(204, 43%, 93%);
+      font-family: 'Karla', sans-serif;
+    }
+
+    .content{
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top{
+      background-color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin: 30px;
+      margin-bottom: 0%;
+      padding: 40px;
+    }
+
+    #title{
+      color: aquamarine;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    #subtitle{
+      color: chartreuse;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    #p1{
+      color: darkgray;
+      font-size: 16px;
+    }
+
+    #bottom{
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      color: white;
+    }
+
+    .left{
+      width: 50%;
+      background-color: hsl(179, 62%, 43%);
+      margin: 30px;
+      margin-top: 0%;
+      margin-right: 0%;
+      padding: 40px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .title2{
+      font-size: 20px;
+      margin-top: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .price{
+      display: flex;
+      font-weight: 700;
+    }
+
+    .price #price{
+      font-size: 28px;
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+
+    .price #pricetext{
+      margin-left: 10px;
+      margin-top: 14px;
+      color: powderblue;
+    }
+
+    #sign{
+      width: 80%;
+      padding: 20px;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 5px;
+      border-width: 0;
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .right{
+      width: 50%;
+      background-color: deepskyblue;
+      margin: 30px;
+      margin-left: 0%;
+      margin-top: 0%;
+      padding: 40px;
+      border-bottom-right-radius: 20px;
+    }
+
+    #p2{
+      font-weight: normal;
+      color: paleturquoise;
+    }
+
+    @media(max-width: 700px){
+      .content{
+        display: initial;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+      }
+
+      .top{
+        height: fit-content;
+        width: 300px;
+      }
+
+      #bottom{
+        display: initial;
+        width: 300px;
+        height: 200px;
+      }
+
+      .left, .right {
+        width: 300px;
+        height: 200px;
+      }
+
+      .left{
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .right{
+        border-bottom-left-radius: 20px;
+        margin-left: 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="top">
+      <p id="title">Join our community</p>
+
+      <p id="subtitle">30-day, hassle-free money back guarantee</p>
+
+      <p id="p1">Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+
+    <div id="bottom">
+      <div class="left">
+        <p class="title2"> Monthly Subscription </p>
+        
+        <div class="price">
+          <p id="price">&dollar;29</p> 
+          <p id="pricetext">per month</p>
+        </div>
+
+        <p id="p2"></p>Full access for less than &dollar;1 a day</p>
+
+        <input id="sign" type="button" value="Sign Up">
+
+      </div>
+
+      <div class="right">
+        <p class="title2">Why Us</p>
+
+        <h4 id="p2">Tutorials by industry experts<br>
+        Peer &amp; expert code review<br>
+        Coding exercises<br>
+        Access to our GitHub repos<br>
+        Community forum<br>
+        Flashcard decks<br>
+        New videos every week</h4>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">TheSups</a>.
+    </p>
+  </footer>
+</body>
+</html>
